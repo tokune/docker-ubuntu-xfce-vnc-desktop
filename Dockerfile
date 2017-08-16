@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER Chieh Yu <welkineins@gmail.com>
 
 ENV HOME /root
@@ -10,6 +10,7 @@ RUN apt-get update \
 		xfce4 xfce4-goodies \
 		x11vnc xvfb \
 		firefox \
+		fonts-arphic-ukai \
 	&& apt-get autoclean \
 	&& apt-get autoremove \
 	&& rm -rf /var/lib/apt/lists/*
